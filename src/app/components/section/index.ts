@@ -1,0 +1,5 @@
+export { SectionEducation } from './education/section-education'
+export { SectionAbout } from './about/section-about'
+export { SectionHome } from './home/section-home'
+export { SectionPortafolio } from './portafolio/section-portafolio'
+export { SectionContact } from './contact/section-contact'

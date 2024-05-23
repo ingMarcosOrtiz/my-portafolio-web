@@ -1,0 +1,59 @@
+.boxContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+  padding-left: 3rem;
+  /* background-color: aliceblue; */
+}
+
+.boxContainer .box {
+  width: 27rem;
+  margin: 4rem 1rem;
+  padding-left: 4rem;
+  border-left: 0.2rem solid #fff;
+  position: relative;
+}
+
+.boxContainer .box span {
+  font-size: 1.3rem;
+  background-color: #222;
+  color: #fff;
+  border-radius: 5rem;
+  padding: 0.5rem 2.5rem;
+}
+
+.boxContainer .box h3 {
+  font-size: 2rem;
+  color: #fff;
+  padding-top: 1.5rem;
+  font-weight: 500;
+}
+
+.boxContainer .box p {
+  font-size: 1.4rem;
+  color: #eee;
+  padding: 1rem 0;
+}
+
+.boxContainer .box svg {
+  position: absolute;
+  top: -1.5rem;
+  left: -2.5rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 50%;
+  line-height: 5rem;
+  text-align: center;
+  /* font-size: 1rem; */
+  padding: 10px;
+  color: #222;
+  background-color: var(--yellow);
+}
+
+@media (max-width: 600px) {
+  .boxContainer .box {
+    width: 100%;
+  }
+}

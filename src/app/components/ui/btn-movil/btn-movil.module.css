@@ -1,0 +1,23 @@
+.btnMobil {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  background-color: #333;
+  cursor: pointer;
+  padding: 1rem 1.5rem 0.6rem;
+  z-index: 999;
+  border-radius: 8px;
+  display: none;
+}
+
+.iconClose,
+.iconHamburguer {
+  stroke: var(--yellow);
+}
+
+/* media query */
+@media (max-width: 991px) {
+  .btnMobil {
+    display: block;
+  }
+}
