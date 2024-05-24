@@ -1,0 +1,40 @@
+.containerbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* gap: 10px; */
+}
+.containerbox .box {
+  height: 20rem;
+  width: 26rem;
+  border-radius: 1rem;
+  margin: 2rem 2rem 1rem 2rem;
+  overflow: hidden;
+  cursor: pointer;
+  border: 3px solid var(--yellow);
+}
+
+.containerbox .titlePortafolio {
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.7rem;
+}
+.containerbox .box img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.containerbox .box:hover img {
+  transform: scale(1.2);
+}
+
+@media (max-width: 600px) {
+  .containerbox .box {
+    width: 100%;
+  }
+  .containerbox {
+    width: 100%;
+  }
+}

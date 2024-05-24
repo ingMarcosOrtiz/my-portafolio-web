@@ -49,9 +49,9 @@
 }
 .portafoliocContent p {
   font-size: 1.5rem;
-  color: #eee;
+  color: #d8d8d8;
   padding: 1rem 0;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.9rem;
   letter-spacing: 1px;
 }
@@ -65,9 +65,9 @@
 }
 .wrapperItem li {
   font-size: 1.5rem;
-  color: #eee;
+  color: #d8d8d8;
   /* padding: 1rem 0; */
-  font-weight: 200;
+  font-weight: 300;
   /* line-height: 1.9rem; */
   letter-spacing: 1px;
 }

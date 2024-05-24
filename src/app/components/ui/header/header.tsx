@@ -8,6 +8,7 @@ import {
   FaLinkedin,
   FaInstagram,
   FaSquareYoutube,
+  FaStar,
 } from 'react-icons/fa6'
 import { Link } from 'react-scroll'
 
@@ -29,6 +30,14 @@ export function Header() {
           <h3 className={styles.name}>Marcos Ortiz</h3>
 
           <p className={styles.cargo}>Ingeniero de Sistemas</p>
+          <div className={styles.containerStar}>
+            <FaStar color='var(--yellow)' fontSize={16} />
+            <FaStar color='var(--yellow)' fontSize={16} />
+            <FaStar color='var(--yellow)' fontSize={16} />
+            <FaStar color='var(--yellow)' fontSize={16} />
+            <FaStar color='var(--yellow)' fontSize={16} />
+            <p>5/5</p>
+          </div>
         </div>
 
         <nav className={styles.navbar}>

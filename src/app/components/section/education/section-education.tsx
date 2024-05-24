@@ -10,67 +10,44 @@ export function SectionEducation({ ref }: Props) {
     <>
       <section className={styles.education} id='education'>
         <h1 className='heading'>
-          My <span>Education</span>
+          Mi <span>Educación</span>
         </h1>
 
         <div className={styles.boxContainer}>
           <div className={styles.box}>
             <FaGraduationCap />
-            <span>2016</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
-          </div>
-
-          <div className={styles.box}>
-            <FaGraduationCap />
-            <span>2017</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
-          </div>
-
-          <div className={styles.box}>
-            <FaGraduationCap />
-            <span>2018</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
-          </div>
-          <div className={styles.box}>
-            <FaGraduationCap />
             <span>2019</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
+            <h3>Ingeniería de Sistemas</h3>
+            <p>✔ Universidad Nacional Abierta y a Distancia - (UNAD)</p>
+          </div>
+
+          <div className={styles.box}>
+            <FaGraduationCap />
+            <span>2014</span>
+            <h3>
+              Tecnólogo en Análisis y Desarrollo de Sistemas de información
+            </h3>
+            <p>✔ Servicio Nacional de Aprendizaje - (SENA) </p>
+          </div>
+
+          <div className={styles.box}>
+            <FaGraduationCap />
+            <span>2013</span>
+            <h3>Técnico en Sistemas</h3>
+            <p>✔ (UPARSISTEM)</p>
+          </div>
+          <div className={styles.box}>
+            <FaGraduationCap />
+            <span>2023</span>
+            <h3>Herramientas de Inteligencia Artificial para Devlopers</h3>
+            <p>✔ (PLATZI)</p>
           </div>
 
           <div className={styles.box}>
             <FaGraduationCap />
             <span>2020</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
+            <h3>Frontend Developer</h3>
+            <p>✔ (PLATZI)</p>
           </div>
 
           <div className={styles.box}>

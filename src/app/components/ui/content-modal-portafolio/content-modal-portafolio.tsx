@@ -1,14 +1,22 @@
+import { PortfolioItemData } from '@/app/lib/interfaces'
 import styles from './content-modal-portafolio.module.css'
 import Image from 'next/image'
-export function ContentModalPortafolio() {
+
+interface Props {
+  data: PortfolioItemData
+}
+
+export function ContentModalPortafolio({ data }: Props) {
+  const { description, imageSrc, subtitle, subtitle2, tecnology, title, url } =
+    data
   return (
     <>
       <div className={styles.container}>
         <div className={styles.imgPortafolio}>
           {/* <p>Imagen Portafolio</p> */}
           <Image
-            src='/img/Imagen1.png'
-            alt='foto portafolio'
+            src={imageSrc}
+            alt={`foto portafolio ${title}`}
             // className={styles.picture}
             width={400}
             height={400}
@@ -18,36 +26,22 @@ export function ContentModalPortafolio() {
         <div className={styles.descriptionPortafolio}>
           <div className={styles.portafoliocContent}>
             <div>
-              <h1>Desarrollo Frontend</h1>
-              <h2>Aplicación web - CanaryClean</h2>
+              <h1>{title}</h1>
+              <h2>{subtitle}</h2>
             </div>
             <div>
-              <p>
-                El desarrollo web es un proceso complejo que implica la creación
-                de productos digitales en línea. También es un término que
-                define la creación de sitios web para Internet o una intranet.
-                Para conseguirlo se hace uso de tecnologías de software del lado
-                del servidor y del cliente que involucran una combinación de
-                procesos de base de datos con el uso de un navegador web a fin
-                de realizar determinadas tareas o mostrar información.1​
-              </p>
+              <p>{description}</p>
             </div>
-            <a
-              target='_blank'
-              className={styles.link}
-              href='https://canaryclean.com/'>
-              https://canaryclean.com/
+            <a target='_blank' className={styles.link} href={url}>
+              {url}
             </a>
-            <h2 className={styles.subtitle}>Tecnologias que usé :</h2>
+            <h2 className={styles.subtitle}>{subtitle2}</h2>
             <div className={styles.wrapperTecnology}>
               <div className={styles.wrapperItem}>
                 <ul>
-                  <li>Laravel</li>
-                  <li>Javascript</li>
-                  <li>PHP</li>
-                  <li>React</li>
-                  <li>CSS</li>
-                  <li>Mysql</li>
+                  {tecnology.map((tech, index) => (
+                    <li key={index}>{tech}</li>
+                  ))}
                 </ul>
               </div>
               {/* <div className={styles.wrapperItem}>

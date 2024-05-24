@@ -10,22 +10,28 @@ export function SectionHome({ ref }: Props) {
   return (
     <>
       <section className={styles.home} id='home'>
-        <h3>HI THERE !</h3>
+        <h3>Hola, que tal 👋🏻!</h3>
         <h1>
-          {`I'M`} <span>Marcos Ortiz</span>
+          {`Soy`} <span>Marcos Ortiz</span>
         </h1>
+        {/* <p>
+          Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones
+          web y móviles. <br /> Me dedico a crear soluciones a medida que se
+          adaptan a las necesidades específicas de cada cliente. Mi pasión por
+          la programación y mi habilidad para trabajar con tecnologías modernas
+          me permiten llevar tus ideas al siguiente nivel.
+        </p> */}
         <p>
-          Ingeniero de Sistemas especializado en el desarrollo Full Stack en
-          JavasCript, con una sólida formación académica y experiencia
-          certificada laboralmente. He demostrado mi capacidad para crear
-          interfaces de usuario atractivas y eficientes, centrándome en
-          implementar soluciones frontend robustas que mejoren tanto la
-          experiencia del usuario como el rendimiento de una aplicación web,
-          landing page ó plataformas de ecommerce.
+          Ingeniero de Sistemas con experiencia en el desarrollo de aplicaciones
+          web y móviles. Me dedico a crear soluciones personalizadas que se
+          ajustan a las necesidades específicas de cada cliente. Mi pasión por
+          la programación y mi habilidad para trabajar con tecnologías modernas
+          me permiten llevar tus ideas al siguiente nivel.
         </p>
+
         <Link href={'#about'}>
           <button className='btn'>
-            About Me <FaUser fontSize={16} />
+            Servicios <FaUser fontSize={16} />
           </button>
         </Link>
       </section>

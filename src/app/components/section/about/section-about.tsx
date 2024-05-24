@@ -8,23 +8,40 @@ export function SectionAbout() {
     <>
       <section className={styles.about} id='about'>
         <h1 className='heading'>
-          <span>About</span> me{' '}
+          <span>Acerca de</span> mi{' '}
         </h1>
 
         <div className={styles.row}>
           <div className={styles.info}>
             <h3>
-              <span>Name:</span>Marcos Ortiz
+              <span>Nombre: </span>Marcos Ortiz
             </h3>
             <h3>
-              <span>Ubicacion:</span>Valledupar - Cesar - Colombia
+              <span>Profesión: </span>Ingeniero de Sistemas.
+            </h3>
+
+            <h3>
+              <span>Experiencia: </span>4 años de experiencia.
+            </h3>
+
+            <h3>
+              <span>Stack: </span> Full Stack en JavaScript.
             </h3>
             <h3>
-              <span>Nacionalidad:</span>Colombia
+              <span>Tecnologías: </span> React, NextJs, React Nactive, NodeJs,
+              NestJs, PostgreSQL, Mysql, Figma.
             </h3>
             <h3>
-              <span>Lenguaje:</span>Español nativo
+              <span>Cloud computing: </span>Railway, Digitalocean Spaces,
+              Namecheap.
             </h3>
+            <h3>
+              <span>Servicios: </span> Freelance - Aplicaciones Web y Móvil.
+            </h3>
+            <h3>
+              <span>País: </span> Colombia
+            </h3>
+
             <Link href={'/#'}>
               <button className='btn'>
                 Dowload CV
@@ -35,22 +52,22 @@ export function SectionAbout() {
           <div className={styles.counter}>
             <div className={styles.box}>
               <span> 4+</span>
-              <h3>Years of experience</h3>
+              <h3>Años de Experiencia.</h3>
             </div>
 
             <div className={styles.box}>
-              <span> 100+</span>
-              <h3>Project completed</h3>
+              <span> 12+</span>
+              <h3>Proyectos completados.</h3>
             </div>
 
             <div className={styles.box}>
-              <span> 430+</span>
-              <h3>Happy Clients</h3>
+              <span> 6+</span>
+              <h3>Clientes Felices.</h3>
             </div>
 
             <div className={styles.box}>
-              <span> 200+</span>
-              <h3>Junmantyu</h3>
+              <span> 10+</span>
+              <h3>Tecnologías</h3>
             </div>
           </div>
         </div>

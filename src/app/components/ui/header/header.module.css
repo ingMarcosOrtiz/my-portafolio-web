@@ -67,6 +67,18 @@
   font-weight: 600;
 }
 
+.containerStar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  margin-top: 6px;
+}
+.containerStar p {
+  color: #eee;
+  font-size: 1.7rem;
+}
+
 /* media query */
 @media (max-width: 991px) {
   .header {

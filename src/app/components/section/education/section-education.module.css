@@ -10,6 +10,7 @@
 
 .boxContainer .box {
   width: 27rem;
+  height: 200px;
   margin: 4rem 1rem;
   padding-left: 4rem;
   border-left: 0.2rem solid #fff;
@@ -34,6 +35,12 @@
 .boxContainer .box p {
   font-size: 1.4rem;
   color: #eee;
+  padding: 1rem 0;
+}
+
+.boxContainer .box a {
+  font-size: 1.4rem;
+  color: var(--yellow);
   padding: 1rem 0;
 }
 
