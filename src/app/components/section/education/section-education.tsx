@@ -16,6 +16,34 @@ export function SectionEducation({ ref }: Props) {
         <div className={styles.boxContainer}>
           <div className={styles.box}>
             <FaGraduationCap />
+            <span>2024</span>
+            <h3>Curso: Nest Desarrollo backend escalable con Node</h3>
+
+            <p>
+              REST, TypeScript, Websockets, Autenticación, Authorización,
+              Docker, Mongo, Postgres, TypeOrm. Nest es un framework de node
+              extensible, versátil y progresivo, el cual nos ofrece la columna
+              vertebral de todo tipo de aplicaciones del lado del servidor.
+            </p>
+          </div>
+          <div className={styles.box}>
+            <FaGraduationCap />
+            <span>2024</span>
+            <h3>Curso: Domina TailwindCSS - Desde cero a experto </h3>
+            <p>✔ UDEMY</p>
+          </div>
+
+          <div className={styles.box}>
+            <FaGraduationCap />
+            <span>2023</span>
+            <h3>
+              Curso: Herramientas de Inteligencia Artificial para Devlopers
+            </h3>
+            <p>✔ (PLATZI)</p>
+          </div>
+
+          <div className={styles.box}>
+            <FaGraduationCap />
             <span>2019</span>
             <h3>Ingeniería de Sistemas</h3>
             <p>✔ Universidad Nacional Abierta y a Distancia - (UNAD)</p>
@@ -35,31 +63,6 @@ export function SectionEducation({ ref }: Props) {
             <span>2013</span>
             <h3>Técnico en Sistemas</h3>
             <p>✔ (UPARSISTEM)</p>
-          </div>
-          <div className={styles.box}>
-            <FaGraduationCap />
-            <span>2023</span>
-            <h3>Herramientas de Inteligencia Artificial para Devlopers</h3>
-            <p>✔ (PLATZI)</p>
-          </div>
-
-          <div className={styles.box}>
-            <FaGraduationCap />
-            <span>2020</span>
-            <h3>Frontend Developer</h3>
-            <p>✔ (PLATZI)</p>
-          </div>
-
-          <div className={styles.box}>
-            <FaGraduationCap />
-            <span>2021</span>
-            <h3>Frond end development</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
-              qui quas, quisquam, ipsum sapiente tempore obcaecati veritatis
-              quis cumque sit deserunt maxime modi. Veritatis expedita
-              dignissimos, optio quae dicta earum?
-            </p>
           </div>
         </div>
       </section>

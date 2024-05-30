@@ -1,6 +1,6 @@
 .boxContainer {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 1rem 0;
@@ -10,7 +10,7 @@
 
 .boxContainer .box {
   width: 27rem;
-  height: 200px;
+  /* height: 250px; */
   margin: 4rem 1rem;
   padding-left: 4rem;
   border-left: 0.2rem solid #fff;

@@ -1,16 +1,24 @@
-import {
-  FaEnvelope,
-  FaPhone,
-  FaLocationDot,
-  FaPaperPlane,
-} from 'react-icons/fa6'
+'use client'
+import { FaEnvelope } from 'react-icons/fa6'
+import { FaPhone } from 'react-icons/fa6'
+import { FaLocationDot } from 'react-icons/fa6'
+import { FaPaperPlane } from 'react-icons/fa6'
+
 import styles from './section-contact.module.css'
+import { useForm } from 'react-hook-form'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { userSchema } from '@/app/validations/userSchema'
 
-interface Props {
-  ref?: React.ForwardedRef<HTMLElement>
-}
+export function SectionContact() {
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors },
+  } = useForm({ resolver: zodResolver(userSchema) })
 
-export function SectionContact({ ref }: Props) {
+  console.log(errors)
+
   return (
     <>
       <section className={styles.contact} id='contacto'>
@@ -34,21 +42,36 @@ export function SectionContact({ ref }: Props) {
               </h3>
             </div>
           </div>
-          <form action=''>
-            <input type='text' placeholder='Nombre' className={styles.box} />
-            <input type='email' placeholder='Correo' className={styles.box} />
+          <form
+            onSubmit={handleSubmit((data) => {
+              console.log(data)
+            })}>
+            <input
+              type='text'
+              placeholder='Nombre'
+              className={styles.box}
+              {...register('name')}
+            />
+            <input
+              type='text'
+              placeholder='Correo'
+              className={styles.box}
+              {...register('email')}
+            />
 
             <textarea
-              name=''
-              id=''
               cols={30}
               rows={10}
               className={`${styles.box} ${styles.message}`}
-              placeholder='Mensaje'></textarea>
+              placeholder='Mensaje'
+              {...register('message')}></textarea>
 
             <button className='btn' type='submit'>
               Enviar <FaPaperPlane fontSize={16} />
             </button>
+            <div style={{ color: 'white' }}>
+              {JSON.stringify(watch(), null, 2)}
+            </div>
           </form>
         </div>
       </section>

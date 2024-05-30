@@ -3,13 +3,12 @@ import React from 'react'
 import styles from './header.module.css'
 import Image from 'next/image'
 import { useUIStore } from '@/app/store'
-import {
-  FaGithub,
-  FaLinkedin,
-  FaInstagram,
-  FaSquareYoutube,
-  FaStar,
-} from 'react-icons/fa6'
+import { FaGithub } from 'react-icons/fa6'
+import { FaLinkedin } from 'react-icons/fa6'
+import { FaInstagram } from 'react-icons/fa6'
+import { FaSquareYoutube } from 'react-icons/fa6'
+import { FaStar } from 'react-icons/fa6'
+
 import { Link } from 'react-scroll'
 
 export function Header() {
