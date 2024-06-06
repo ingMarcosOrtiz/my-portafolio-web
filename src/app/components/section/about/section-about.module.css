@@ -49,6 +49,7 @@
   font-weight: 300;
 }
 
+
 @media (max-width: 600px) {
   .heading {
     margin: 0 3rem;
@@ -59,5 +60,8 @@
 
   .info {
     padding-left: 3rem;
+  }
+  .form button{
+    width: 100%;
   }
 }

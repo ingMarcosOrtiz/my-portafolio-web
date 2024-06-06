@@ -1,0 +1,67 @@
+.form .icon{
+    color: var(--yellow);
+    font-size: 4rem;
+  }
+  .form .text{
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
+   font-weight: 300;
+   line-height: 2.4rem;
+   text-align: center;
+  }
+  .form button{
+    margin-top: 2rem;
+    padding: 0.7rem 3rem;
+    background-color: var(--yellow);
+    color: #333;
+    cursor: pointer;
+    font-size: 2rem;
+    border-radius: 5rem;
+   
+  }
+  .form button:hover{
+    box-shadow: 0 0 0 1px #FFF;
+    color: #FFF;
+  }
+  
+  .inputBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+  }
+  .inputBox label{
+    color: var(--yellow);
+    font-size: 1.5rem;
+  }
+  .inputBox .input{
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #222;
+    color: #a3a3a3;
+    text-transform: none;
+    font-size: 1.7rem;
+    width: 100%;
+    border-radius: 0.75rem;
+  }
+  
+  .error{
+    color: #ce4c4c;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .successMensage{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+    color: #4d944d;
+    font-size: 1.3rem;
+    font-weight: 300;
+  }
+  .successMensage svg{
+    margin-top: 5px;
+  }

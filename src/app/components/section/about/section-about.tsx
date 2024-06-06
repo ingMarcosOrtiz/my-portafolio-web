@@ -1,9 +1,26 @@
-import Image from 'next/image'
+'use client'
+import { useState } from 'react'
 import styles from './section-about.module.css'
-import Link from 'next/link'
 import { FaDownload } from 'react-icons/fa6'
+import { FormSendCv, Modal } from '../../ui'
 
 export function SectionAbout() {
+  const [showModal, setShowModal] = useState(false)
+ 
+
+  function handleOpenModal(value: string) {
+    if (value === 'open') {
+      document.getElementsByTagName('body')[0].style.overflow = 'hidden'
+      
+      setShowModal(true)
+    } else {
+      document.getElementsByTagName('body')[0].style.overflow = 'visible'
+      
+      setShowModal(false)
+    }
+  }
+
+
   return (
     <>
       <section className={styles.about} id='about'>
@@ -25,7 +42,7 @@ export function SectionAbout() {
             </h3>
 
             <h3>
-              <span>Stack: </span> Full Stack en JavaScript.
+              <span>Stack: </span> Senior Developer - Full Stack en JavaScript.
             </h3>
             <h3>
               <span>Tecnologías: </span> React, NextJs, React Nactive, NodeJs,
@@ -42,12 +59,13 @@ export function SectionAbout() {
               <span>País: </span> Colombia
             </h3>
 
-            <Link href={'/#'}>
-              <button className='btn'>
+           
+              <button type='button' onClick={() => handleOpenModal('open')}
+                className='btn' >
                 Dowload CV
                 <FaDownload fontSize={16} />
               </button>{' '}
-            </Link>
+            
           </div>
           <div className={styles.counter}>
             <div className={styles.box}>
@@ -70,6 +88,18 @@ export function SectionAbout() {
               <h3>Tecnologías</h3>
             </div>
           </div>
+
+          {/* <Modal /> */}
+        <Modal
+          showModal={showModal}
+          width='modalXs'
+          btnCloseModal
+          closeModal={() => handleOpenModal('close')}>
+          <>
+          <FormSendCv/ >
+            
+          </>
+        </Modal>
         </div>
       </section>
     </>

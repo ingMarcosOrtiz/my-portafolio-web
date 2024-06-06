@@ -1,6 +1,6 @@
 .contact .row {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -51,6 +51,41 @@
 
 .content .info h3 svg {
   color: var(--yellow);
+}
+
+.question{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.question svg{
+  margin-top: 1rem;
+  color: var(--yellow);
+  
+}
+.content .text{
+  font-size: 1.7rem;
+  color: #eee;
+  font-weight: 300;
+  padding: 1rem 0;
+}
+.error{
+  color: #ce4c4c;
+  font-size: 12px;
+  font-weight: 400;
+}
+.successMensage{
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  color: #4d944d;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.successMensage svg{
+  margin-top: 5px;
 }
 
 @media (max-width: 600px) {
