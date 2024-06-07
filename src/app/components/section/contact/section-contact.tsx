@@ -48,7 +48,7 @@ export function SectionContact() {
                 <FaSquareWhatsapp /> +57 317-576-2034
               </h3>
               <h3>
-                <FaLocationDot /> Colombia - Valledupar Cesar.
+                <FaLocationDot /> Colombia - Valledupar Cesar..
               </h3>
               <div className={styles.question}>
                 <div>
