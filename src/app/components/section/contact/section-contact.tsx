@@ -10,8 +10,9 @@ import styles from './section-contact.module.css'
 import { SubmitHandler, useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { userSchema } from '@/app/validations/userSchema'
+import { sendInfo } from '@/app/lib/actions/actions'
 
-type Inputs = {
+export type Inputs = {
   name: string
   email: string
   message: string
@@ -22,11 +23,15 @@ export function SectionContact() {
     register,
     handleSubmit,
     watch,
+    reset,
     formState: { errors },
   } = useForm<Inputs>({ resolver: zodResolver(userSchema) })
 
-  const onSubmit: SubmitHandler<Inputs> = (data) => {
+  const onSubmit: SubmitHandler<Inputs> = async (data) => {
     console.log('🟢', data)
+    const resp = await sendInfo(data)
+    console.log('🔴', resp)
+    reset()
   }
 
   return (

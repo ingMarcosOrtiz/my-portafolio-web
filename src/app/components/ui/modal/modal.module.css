@@ -18,7 +18,7 @@
 }
 
 .popUp .popUpWrapper {
-  padding: 20px;
+  /* padding: 20px; */
   transform: scale(0.1);
   opacity: 0;
   transition: all 0.1s ease;
@@ -128,7 +128,7 @@
   background-color: transparent;
   cursor: pointer;
   position: absolute;
-  top: -63px;
+  top: -40px;
   right: -30px;
 }
 @media (min-width: 768px) {
@@ -201,7 +201,9 @@
 @media (max-width: 768px) {
   .btnClose {
     right: -5px;
+    top: -63px;
   }
+
   .modalBody {
     max-height: 400px;
     overflow-y: auto;

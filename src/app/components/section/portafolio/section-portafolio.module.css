@@ -6,3 +6,30 @@
   padding: 2rem 0;
   /* border: 0.1rem solid #fff4; */
 }
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.tabs button {
+  padding: 1.5rem 2rem;
+  cursor: pointer;
+  background-color: transparent;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tabs button:hover {
+  /* color: var(--yellow); */
+  box-shadow: 0 3px 0 0 var(--yellow);
+}
+
+.tabs button.active {
+  color: var(--yellow);
+  box-shadow: 0 3px 0 0 var(--yellow);
+}
